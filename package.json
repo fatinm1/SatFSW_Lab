@@ -1,0 +1,16 @@
+{
+  "name": "satfsw-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Satellite Flight Software Lab - monorepo",
+  "scripts": {
+    "gateway": "npm run dev -w gateway",
+    "dashboard": "npm run dev -w dashboard",
+    "build:gateway": "npm run build -w gateway",
+    "build:dashboard": "npm run build -w dashboard"
+  },
+  "workspaces": [
+    "gateway",
+    "dashboard"
+  ]
+}
