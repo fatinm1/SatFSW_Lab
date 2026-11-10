@@ -33,7 +33,7 @@ function connect(): net.Socket {
     if (!reconnectTimer) {
       reconnectTimer = setTimeout(() => {
         console.log("[TCP] Reconnecting...");
-        connect();
+        socket = connect();
       }, RECONNECT_DELAY_MS);
     }
   });

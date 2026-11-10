@@ -29,3 +29,5 @@ npm-debug.log*
 sat_core/sat_core
 sat_core/tests/test_*
 *.o
+
+sat_core/tests/command_tests
