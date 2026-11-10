@@ -23,7 +23,7 @@ asan:
 
 clean:
 	rm -f $(TARGET)
-	rm -f tests/test_*
+	$(MAKE) -C tests clean
 
 test: $(TARGET)
 	$(MAKE) -C tests

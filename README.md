@@ -248,3 +248,7 @@ satfsw-lab/
 ## License
 
 MIT
+
+## Verification scope
+
+This is an educational simulator, not flight-certified software or evidence of a hard real-time scheduling guarantee. `make -C sat_core test` builds the simulator and runs command normalization, empty-input, queue drain, and concurrent-producer checks. CI runs these on Linux. The clean target removes test binaries without deleting test source. Timing distributions and automated fault-to-SAFE integration scenarios still need a dedicated Linux execution environment and measured results.
